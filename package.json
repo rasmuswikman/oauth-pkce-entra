@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -w src/server -x tsx src/server/main.ts",
-    "start": "NODE_ENV=production tsx src/server/main.ts",
+    "dev": "cross-env NODE_ENV=development nodemon -w src/server -x tsx src/server/main.ts",
+    "start": "cross-env NODE_ENV=production tsx src/server/main.ts",
     "build": "vite build"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "express-oauth2-jwt-bearer": "^1.6.1",
+    "helmet": "^8.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-oauth2-code-pkce": "^1.23.1",
@@ -21,11 +22,13 @@
     "vite-express": "*"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.1",
     "@types/node": "^22.15.2",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
+    "cross-env": "^10.0.0",
     "nodemon": "^3.1.10",
     "vite": "^6.3.3"
   }

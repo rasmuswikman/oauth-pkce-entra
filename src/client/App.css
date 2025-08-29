@@ -1,10 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 main {
   width: 100vw;
   height: 100vh;
   text-align: center;
   display: flex;
+  font-size: 16px;
 }
 
-main > * {
+main > div {
   margin: auto;
+  width: 400px;
+}
+
+main > div > div {
+  margin-bottom: 16px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 100px;
+  border: none;
+  background: linear-gradient(var(--button1), var(--button2));
+  transition: --button1 0.4s, --button2 0.4s;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:hover {  
+  --button1: #6dd5ed;
+  --button2: #2193b0;
+}
+
+@property --button1 {
+  syntax: '<color>';
+  initial-value: #ccc;
+  inherits: false;
+}
+
+@property --button2 {
+  syntax: '<color>';
+  initial-value: #999;
+  inherits: false;
+}
+
+hr {
+  margin: 24px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.authorized {
+  color: green;
+  font-weight: bold;
+}
+
+.unauthorized {
+  color: red;
+  font-weight: bold;
 }
