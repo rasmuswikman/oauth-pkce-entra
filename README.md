@@ -2,7 +2,7 @@
 
 This is a small [Vite Express](https://github.com/szymmis/vite-express) application to verify OAuth with PKCE and Microsoft Entra ID. 
 
-[Demo](https://oauth-pkce-entra.vercel.app) on Vercel.
+[Demo](https://oauth-pkce-entra.onrender.com) on [Render](https://render.com).
 
 
 ### Features
