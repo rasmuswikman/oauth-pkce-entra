@@ -2,8 +2,6 @@
 
 Authenticate a browser-only client with Microsoft Entra ID using OAuth and PKCE and protect an Express API endpoint with bearer JWT token.
 
-[Demo](https://oauth-pkce-entra.onrender.com) on [Render](https://render.com).
-
 
 ### Flow
 
